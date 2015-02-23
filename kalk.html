@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<title>slider 1</title>
+
+<style>
+div{
+	background-color:#999;
+	width:100px;
+	height:100px;
+	
+	
+	
+}
+#hor{
+	background-color:#0C3;}
+
+</style>
+
+</head>
+
+<body>
+<label id="lab">
+
+</label>
+
+
+<section id="hor">
+<div id="div1">
+
+</div>
+</section>
+<input id="alt1" type="range" max="10" min="1">
+<input id="alt2" type="range" max="25" min="1">
+<input id="alt3" type="range" max="25" min="1">
+<input id="alt4" type="range" max="25" min="1">
+<input id="kalkuler" type="button" value="Kalkuler">
+<input id="sum" type="text">
+<script src="jquery-1.11.2.min.js">
+
+</script>
+<script>
+//document.ready
+$(function(){
+	
+	
+	
+		$("#kalkuler").click(function(){
+	var k = parseInt($("#alt1").val());
+	var w = parseInt($("#alt2").val());
+	var i = parseInt($("#alt3").val());
+	var y = parseInt($("#alt4").val());
+			
+			var i = k+w+i+y;
+			
+			$("#sum").attr("value", i);
+			
+			
+		var $img = $("<img>").attr("src", "../Gareth-Bale-Tottenham-Hotspur-Inter-Milan-2011.jpg");
+			if (i >= 10){
+				
+			$("#hor").append($img).css("transform", "rotateY(45deg)");			
+			}
+
+			});
+		
+	
+		
+
+		});
+	
+</script>
+
+</body>
+</html>
